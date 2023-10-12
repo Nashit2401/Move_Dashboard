@@ -3,12 +3,10 @@ import React from "react";
 import { StyleSheet, Text, View } from "react-native";
 import Dashboard from "./screens/Dashboard";
 import BottomSheet from "./screens/BottomSheet";
+import AppNavigator from "./screens/navigation/AppNavigator";
 
 export default function App() {
-  return (
-    <Dashboard />
-    // <BottomSheet />
-  );
+  return <AppNavigator />;
 }
 
 const styles = StyleSheet.create({

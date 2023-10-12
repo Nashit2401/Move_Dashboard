@@ -18,7 +18,7 @@ import Lunges from "../assets/images/Lunges.jpg";
 const Dashboard = () => {
   const [value, setValue] = useState(0);
   const bottomSheetModalRef = useRef(null);
-  const snapPoints = useMemo(() => ["40%", "100%"], []);
+  const snapPoints = useMemo(() => ["33%", "100%"], []);
 
   const handleSheetChanges = useCallback((index) => {
     console.log("handleSheetChanges", index);
@@ -175,7 +175,6 @@ const styles = StyleSheet.create({
     flex: 1,
   },
   Header: {
-    paddingTop: 40,
     paddingHorizontal: 25,
   },
   HeaderText: {
